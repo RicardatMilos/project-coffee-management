@@ -1,0 +1,123 @@
+html, body{
+    height: 99vh;
+    margin: 0;
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 40px;
+    background-color: rgb(0, 0, 0, 0.8);
+    position: sticky;
+    top: 0;
+    width: inherit;
+}
+
+nav>img{
+    height: 60px;
+}
+
+nav>ul{
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 20px;
+    align-self: center;
+}
+
+nav>ul li{
+    list-style: none;
+    font-size: 30px;
+}
+
+nav>ul li a{
+    color: white;
+    text-decoration: none;
+}
+
+nav>ul li a:hover{
+    color: brown;
+}
+
+.main-container{
+    padding: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 100px;
+}
+
+.balance-form{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+}
+
+.balance-form form{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+}
+
+.balance-form form label{
+    font-weight: 600;
+    font-size: 26px;
+    margin-left: 10px;
+}
+
+.balance-form form input{
+    outline: none;
+    width: 400px;
+    font-size: 20px;
+    border-radius: 5px;
+    padding: 5px;
+    margin: 0 0 20px 0;
+}
+
+.balance-form form button{
+    background-color: brown;
+    color: white;
+    padding: 10px;
+    font-size: 20px;
+    border-radius: 10px;
+    border: 0;
+}
+
+.balance-form form button:hover{
+    transform: scale(1.05);
+    transition: all 0.5s ease-in-out;
+}
+    
+
+
+
+
+
+
+
+
+
+
+
+footer{
+    background-image: url(../image/footer-bg.jpg);
+    background-repeat: no-repeat;
+    height: 400px;
+    margin-top: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 100px;
+    color: white;
+}
+
+footer span{
+    font-weight: 600;
+    margin: 0;
+}
+
+footer h2, footer p{
+    margin: 0;
+}
