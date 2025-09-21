@@ -4,19 +4,20 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="../css/index.css">
+    <link rel="stylesheet" href="../css/second-index.css">
 </head>
 <body>
     <nav>
         <img src="../image/logo.png" alt="...">
         <ul>
             <li><a href="./index.html"><ion-icon name="home-outline"></ion-icon></a></li>
-            <li><a href="./menu.html">Menu</a></li>
-            <li><a href="..."><ion-icon name="bag-outline"></ion-icon></a></li>
+            <li id="menu">Menu</li>
+            <li id="bag"><ion-icon name="bag-outline"></ion-icon></li>
             <li class="self">
                 <ion-icon name="person-outline"></ion-icon>
                 <div>
-                    <a href="...">Log out</a>
+                    <a href="./login.html">Login</a>
+                    <a href="./register.html">Register</a>
                 </div>
             </li>
         </ul>
@@ -24,7 +25,7 @@
 
     <div class="ads-container">
         <p>Bắt đầu ngày với một tách đen đá không đường...</p>
-        <button>Mua Ngay</button>
+        <button id="button">Mua Ngay</button>
     </div>
 
     <div class="main-container">
@@ -38,25 +39,25 @@
         <div class="menu-preview-container">
             <h2>Có gì mới?</h2>
             <div class="product-preview-container">
-                <div class="product-container">
+                <div class="product-container" id="product-container-1">
                     <img src="../image/image_product/tra-hoa-qua.jpg" alt="...">
                     <p>Trà hoa quả</p>
                     <p class="price">50.000</p>
                 </div>
 
-                <div class="product-container">
+                <div class="product-container" id="product-container-2">
                     <img src="../image/image_product/tra-dao-bon-mua.jpg" alt="...">
                     <p>Trà Đào Bốn Mùa</p>
                     <p class="price">50.000</p>
                 </div>
 
-                <div class="product-container">
+                <div class="product-container" id="product-container-3">
                     <img src="../image/image_product/nuoc-chanh-tuoi-lanh.jpg" alt="...">
                     <p>Nước chanh tươi lạnh</p>
                     <p class="price">50.000</p>
                 </div>
 
-                <div class="product-container">
+                <div class="product-container" id="product-container-4">
                     <img src="../image/image_product/tra-chanh-lo-hoi.jpg" alt="...">
                     <p>Trà chanh lô hội</p>
                     <p class="price">50.000</p>
@@ -77,6 +78,12 @@
         </div>
     </footer>
 
+    <div class="warning-container" id="warning-container">
+        <ion-icon name="alert-outline"></ion-icon>
+        <h1>Vui Lòng Đăng Nhập</h1>
+        <button id="warning-button">Đã Hiểu</button>
+    </div>
+
 
 
 
@@ -89,7 +96,7 @@
     <!-- Realtime Database -->
     <script src="https://www.gstatic.com/firebasejs/10.13.2/firebase-database-compat.js"></script>
     <script src="../js/firebase_config.js"></script>
-    <script src="../js/index.js"></script>
+    <script src="../js/second-index.js"></script>
     <script src="../js/login.js"></script>
     <script src="../js/register.js"></script>
 

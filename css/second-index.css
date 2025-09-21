@@ -36,6 +36,12 @@ nav>ul{
 nav>ul li{
     list-style: none;
     font-size: 30px;
+    color: white;
+}
+
+nav>ul li:hover{
+    color: brown;
+    cursor: pointer;
 }
 
 nav>ul li a{
@@ -198,4 +204,35 @@ footer span{
 
 footer h2, footer p{
     margin: 0;
+}
+
+.warning-container{
+    height: 400px;
+    width: 600px;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: blanchedalmond;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 20px;
+    border: 2px black solid;
+    backdrop-filter: blur(8px);
+    flex-direction: column;
+    display: none;
+}
+
+.warning-container button{
+    background-color: brown;
+    color: white;
+    border-radius: 10px;
+    padding: 20px;
+    border: 0;
+}
+
+.warning-container ion-icon{
+    color: red;
+    font-size: 40px;
 }
